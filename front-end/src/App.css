@@ -1,0 +1,288 @@
+
+.App {
+  text-align: center;
+}
+body {
+  font-family: var(--font-family);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.login{
+ max-width: 400px;
+  margin: auto;
+
+}
+
+.pg-not-fd{
+  margin: 20px 0 20px 0;
+  font-weight:bold;
+  font-size:25px;
+
+  
+}
+
+.MarginText{
+  margin:20px 0 20px 0;
+  text-align: center;
+  font-weight: bold;
+
+}
+.masthead {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  width: 100%;
+  height: 100vh; /* if you don't want it to take up the full screen, reduce this number */
+  overflow: hidden;
+  background-size: cover !important;
+  background: radial-gradient(ellipse at center, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 53%, rgba(0,0,0,0.65) 100%), url(https://www.parliament.uk/contentassets/aa8b9933d3cb4364b827e7a60ea898e0/hl_library_roger-harris2022.jpg) no-repeat center center scroll;
+}
+
+h1 {
+  font-style: normal;
+  font-weight: bold;
+  color: #eee;
+  font-size: 11vmin;
+  letter-spacing: 0.03em;
+  line-height: 1;
+  text-shadow: 1px 2px 4px rgba(0, 0, 0, 0.8);
+  margin-bottom: 40px;
+}
+    
+      
+button {
+  background: #098191;
+
+  border-radius: 6px;
+  display: inline-block;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  margin: 0;
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 1.2rem;
+  cursor: pointer;
+  text-align: center;
+
+}
+button:hover {
+  background: #63b6b8
+}
+button:focus {
+  outline: 1px solid #fff;
+  outline-offset: -4px;
+}
+
+
+
+/*NavBar*/
+
+.icon-pl{
+  margin:"5px 30px 0 0 ";
+  font-weight: "bold";
+  border:"1px solid #495057";
+   padding:"8px";
+   border-radius:"5px"
+}
+
+.header{
+  display: flex;
+  justify-content: end;
+  background: #f8f9fa;
+    color: #495057;
+    border: 1px solid #e9ecef;
+    border-width: 1px 0 1px 0;
+    padding: .5rem 1rem;
+    font-weight: 600;
+}
+
+.rows{
+  text-align: left;
+  border: 1px solid #e9ecef;
+  border-width: 0 0 1px 0;
+  padding: 16px;
+  color: #495057
+}
+
+.card{
+  --bs-card-border-width: 0.1px;
+}
+
+.wrapper{
+  overflow:auto
+}
+
+.thed{
+   background: #f8f9fa;
+    color: #495057;
+    border-width: 1px 0 1px 0;
+    text-align: left;
+    font-weight: lighter;
+
+
+}
+
+
+
+.search-container {
+  position: relative;
+}
+
+.search-container input[type="text"] {
+  padding-right: 30px;
+  width: 250px;
+}
+
+.search-container .pi-search {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%) translateX(-50%);
+}
+.custom-file-input input[type="file"] {
+  /* Your custom styles here */
+  
+  padding: 8px;
+  font-size: 18px;
+}
+
+.custom-file-input input[type="file"]:focus {
+  /* Your custom styles here */
+  border-color: green;
+  outline: none;
+}
+
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.pagination li {
+  list-style: none;
+  margin-right: 0.44rem;
+}
+
+.pagination li a,
+.pagination li span {
+
+  padding: 0.3rem 0.75rem;
+  color: #333;
+  font-size: 1rem;
+  text-decoration: none;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+.pagination li.active a {
+  color: #fff;
+  background-color: #363c42;
+  border-color: #363c42;
+}
+
+.pagination li.disabled span {
+  color: #ccc;
+  background-color: #f8f9fa;
+  border-color: #f8f9fa;
+  cursor: not-allowed;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.pagination li {
+  list-style: none;
+  margin-right: 0.44rem;
+}
+
+.pagination li a,
+.pagination li span {
+
+  padding: 0.3rem 0.75rem;
+  color: #333;
+  font-size: 1rem;
+  text-decoration: none;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+.pagination li.active a {
+  color: #fff;
+  background-color: #363c42;
+  border-color: #363c42;
+}
+
+.pagination li.disabled span {
+  color: #ccc;
+  background-color: #f8f9fa;
+  border-color: #f8f9fa;
+  cursor: not-allowed;
+}
+
+
+.container{
+  width: 100%;
+}
+
+.container{
+  width: 100%;
+}
+
+.navbar-expand-lg .bg-body-tertiary{
+  padding: 11px
+}
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: 1.5rem;
+  margin-left: -0.5rem;
+  margin-top: -0.5rem;
+}
